@@ -1,7 +1,7 @@
 import streamlit as st
 import methods
 
-"""again"""
+
 todos = methods.getTodos()
 
 def clear_text():
@@ -18,8 +18,9 @@ def complete_todo():
 
 with st.container():
     st.title("TO DO APP")
-    st.subheader("created by khaled turkestani")
-    st.text("Organize your tasks here.")
+    st.subheader("Created by Khaled Turkestani")
+    st.write("Organize your tasks here.", unsafe_allow_html=True)
+
 
 
 
